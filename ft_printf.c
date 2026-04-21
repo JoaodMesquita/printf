@@ -62,17 +62,23 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (count);
 }
+
 /*
+=======
+
+
+>>>>>>> 26f75b8 (README)
 int main()
 {
 	char	name[] = "Joao";
 	int		age = 30;
 	void 	*ptr = &name;
-
+	
 	// %s, %d; %%;
 	ft_printf("My printf: Hello my name is %s and i'm %d\n", name, age);
 	printf("OG printf: Hello my name is %s and i'm %d\n", name, age);
 	// %c
+<<<<<<< HEAD
 
 	ft_printf("%%\n");
 	printf("%%\n");
@@ -80,6 +86,12 @@ int main()
 	ft_printf("My printf: char: %c\n", 'A');
 	printf("OG printf: char: %c\n", 'A');
 
+=======
+	
+	ft_printf("My printf: char: %c\n", 'A');
+	printf("char: %c\n", 'A');
+	
+>>>>>>> 26f75b8 (README)
 	// %u
 	ft_printf("My printf: Unsigned int: %u\n", -1);
 	printf("OG printf: Unsigned int: %u\n", -1);
@@ -91,6 +103,7 @@ int main()
 	printf("OG printf: Hexadecimal Big: %X\n", 100);
 
 	ft_printf("My printf: pointer: %p\n", (void *)ptr);
+<<<<<<< HEAD
 	printf("OG printf: pointer: %p\n", (void *)ptr);
 
 }
